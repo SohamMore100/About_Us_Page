@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  transition: .2s linear;
+  outline: none;
+}
+
+:root {
+  --heading: rgb(0 10 45);
+  --para: #777777;
+  --para-tint: #e4e4e4;
+  --third: #fff;
+  --helper: #8490ff;
+  --helper-tint: #f3f4ff;
+  --bg: rgb(249 249 255);
+  --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+  --shadow: 0px 0px 20px 0px rgba(18, 200, 228, 0.477);
+}
+
+.container {
+  max-width: 136rem;
+  margin: 5px auto;
+}
+
+.section {
+  padding: 9rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 10rem;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* <!-- ======================================== 
+About US CSS section Start  
+========================================  --> */
+
+
+.heading {
+  background: url("logo review/1header.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding-top: 8rem;
+  border-bottom: 0.1rem solid aqua;
+  padding-bottom: 7rem;
+  font-size: 5rem;
+  color: aqua;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .content {
+  flex: 1 1 40rem;
+  padding-top: 3rem;
+}
+
+.about .content span {
+  color: #f7e200;
+  font-size: 2rem;
+
+}
+
+.about .content h3 {
+  color: #b9f2ff;
+  font-size: 3rem;
+  padding-top: .5rem;
+}
+
+.about .content p {
+  color: aqua;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 1rem 0;
+}
+
+.content a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  background-color: orange;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border: 0.1rem solid rgba(10, 227, 216, 0.872);
+}
+
+.content a:hover {
+  background: aquamarine;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+/*------------------------------ About Page v2 Why Choose Us CSS --------------------------------*/
+
+.why-choose-us-image {
+  width: 50%;
+  display: flex;
+}
+
+.why-choose-us-image img {
+  height: 40rem;
+  width: 62rem;
+}
+
+.why-choose-us-about {
+  margin-top: 20px;
+  padding: 0px 50px 0px 33px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.why-choose-us-detail .common-title {
+  font-weight: 998;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-box {
+  margin: 1px 100px 30px 60px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  border: 5px solid yellow;
+  border-radius: 10px;
+  width: 45rem;
+}
+
+.why-choose-us-box:hover {
+  background-color: aqua;
+}
+
+.why-choose-us-icon img {
+  margin: 6px;
+  padding: 6px;
+  width: 5rem;
+  height: 71px;
+  color: aqua;
+  background-color: yellow;
+}
+
+.why-choose-us-content {
+  margin: 0 0 0 0px;
+  padding: 5px;
+}
+
+.why-choose-us-title {
+  margin: 0;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.why-choose-us-sub-desc {
+  padding: 5px;
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+  line-height: 26px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ===========================================
+Services Section
+======================================= */
+
+
+.container {
+  max-width: 90%;
+  margin: 6px auto;
+}
+
+.grid {
+  display: grid;
+  gap: 10rem;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.section-services .grid {
+  margin-top: 5rem;
+  row-gap: 8rem;
+  /* margin-left: 6rem;
+  margin-right: 6rem; */
+}
+
+.service-box {
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 6rem 4rem;
+  transition: all ease .2s linear;
+}
+
+.service-box:hover {
+  transform: translateY(-3.5rem);
+}
+
+.service-box h3 {
+  text-transform: capitalize;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.section-services p {
+  max-width: 60rem;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  word-spacing: 0.3rem;
+}
+
+.service-box img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* ===========================================
+Animated NOs Section CSS
+======================================= */
+.section-work-data {
+  background: -webkit-linear-gradient(0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%);
+  color: var(--third);
+  text-align: center;
+}
+
+.common-numbers {
+  font-size: 4.8rem;
+}
+
+.section-work-data p {
+  color: var(--third);
+}
+
+
+/* ===========================================
+Testimonial Swiper Queries Section
+======================================= */
+
+.swiper {
+  width: 90%;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+html,
+body {
+  position: relative;
+  /* height: 100%; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: aqua;
+  /* backdrop-filter:blur(200rem); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  padding: 20px;
+  width: 35rem;
+  height: 25rem;
+  margin-right: 30px;
+}
+
+.swiper-slide h3,
+h5,
+h6 {
+  color: rgb(0 10 45);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: red;
+  background-color: black;
+  padding: 2rem;
+  border: 5px solid red;
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover {
+  color: yellow;
+  background-color: blue;
+}
+
+.swiper-button-prev {
+  color: red;
+  background-color: black;
+  padding: 2rem;
+  border: 5px solid red;
+  border-radius: 50%;
+}
+
+.swiper-pagination {
+  color: white;
+}
+
+/* ===========================================
+Subscribe Us Section
+======================================= */
+
+.newsletter {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  width: 90%;
+  margin: 50px 70px;
+  background-color: #3e64ff;
+  /* opacity: 0.7; */
+  border: 2px solid red;
+  border-radius: 15px;
+  text-align: center;
+  /* position: relative;
+    background-attachment: fixed; */
+  color: aqua;
+}
+
+.newsletter {
+  position: relative;
+
+}
+
+.newsletter h3 {
+  font-size: 3rem;
+  font-family: sans-serif;
+
+}
+
+.newsletter p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.style {
+  width: 65vh;
+}
+
+.newsletter label {
+  position: relative;
+}
+
+.newsletter input {
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  font-family: serif;
+  font-size: medium;
+}
+
+.newsletter button {
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+  width: 32%;
+  background-color: orange;
+  border: none;
+  border-radius: 1.8px 8px 0;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.newsletter button:hover {
+  background-color: aqua;
+}
+
+/* ===========================================
+Footer Section
+======================================= */
+
+.section-footer {
+  background: rgb(0 10 45);
+  padding: 3rem 0;
+
+}
+
+.section-footer .container .grid {
+  display: grid;
+  gap: 7rem;
+}
+
+.section-footer h3 {
+  color: var(--third);
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
+.f-about p {
+  color: aqua;
+  font-size: 1.5rem;
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+  font-size: 1.8rem;
+  color: aqua;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.f-address p {
+  font-style: normal;
+  color: yellow;
+  font-size: 1.8rem;
+
+}
+
+.f-address a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.f-address a:hover {
+  font-size: 2rem;
+}
+
+footer a:hover {
+  color: white;
+  font-size: 2rem;
+}
+
+.credit {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgb(0 10 45);
+  color: aqua;
+  font-size: 1.8rem;
+}
+
+.credit img {
+  /* margin-bottom: 2.5rem; */
+  padding: 1rem
+}
